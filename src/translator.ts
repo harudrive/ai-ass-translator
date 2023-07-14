@@ -146,7 +146,7 @@ export default class Translator {
                 throw new Error("Cannot get translation from OpenAI.");
             }
             if (!this.disableRateLimit) {
-                await sleep(5000); // API Rate limit
+                await sleep(21000); // API Rate limit
             }
             this.result.push(
                 ...translatedDialogs.map(
